@@ -46,7 +46,7 @@ outputs:
         - cuda-version {{ cuda_version }}
       run:
         - {{ pin_compatible("cuda-version", max_pin="x.x") }}
-        - cuda-nvvm-impl
+        - cuda-nvcc
     test:
       commands:
         - test -f $PREFIX/bin/tileiras                    # [linux]
