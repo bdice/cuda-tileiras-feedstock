@@ -24,7 +24,6 @@ source:
 build:
   number: 2
   skip: true  # [osx or ppc64le]
-  binary_relocation: false
 
 requirements:
   build:
